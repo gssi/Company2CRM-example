@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company:CompanyModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:company="http://cs.gssi.it/evocompany"
+    xsi:schemaLocation="http://cs.gssi.it/evocompany Company.ecore">
+  <company name="IBM"
+      city="L'Aquila"
+      completeAddress="v.le Crispi">
+    <persons
+        xsi:type="company:Employee"
+        fullName="John Doe"
+        assignedTo="//@company/@projects.0"
+        employed="//@company/@lines.1"/>
+    <projects
+        name="BIRDs"
+        related="//@topics.0"
+        budget="1000"/>
+    <lines xsi:type="company:ServiceLine"
+        name="Operating Systems"/>
+    <lines xsi:type="company:Unit"
+        name="Engineering"/>
+  </company>
+  <categories
+      name="Computer Science"
+      topics="//@topics.0 //@topics.1"/>
+  <topics id="Software Development"
+      category="//@categories.0"/>
+  <topics id="Software Testing"
+      category="//@categories.0"/>
+</company:CompanyModel>

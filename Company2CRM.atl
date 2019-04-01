@@ -14,7 +14,7 @@ rule Company2CRM{
 	)
 }
 rule Person2Worker{
-	from s: Company!Employee
+	from s: Company!Person(s.position=#employee)
 	to t: CRM!Account(
 	username <- s.fullName	,
 	group<-s.employed
@@ -26,7 +26,7 @@ rule Person2Worker{
 	)
 }
 rule Person2Client{
-	from s: Company!Client
+	from s: Company!Person(s.position=#client)
 	to t: CRM!Account(
 	username <- s.fullName,
 	group<-s.employed	

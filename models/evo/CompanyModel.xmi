@@ -3,30 +3,41 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:company="http://cs.gssi.it/evocompany"
-    xsi:schemaLocation="http://cs.gssi.it/evocompany Company.ecore">
+    xmlns:company="http://cs.gssi.it/evocompany">
   <company name="IBM"
       city="L'Aquila"
       completeAddress="v.le Crispi">
     <persons
         xsi:type="company:Employee"
-        fullName="John Doe"
+        fullName="Ludovico Iovino"
+        assignedTo="//@company/@projects.1"
+        employed="//@company/@lines.1"/>
+    <persons
+        xsi:type="company:Employee"
+        fullName="Adrian Rutle"
         assignedTo="//@company/@projects.0"
         employed="//@company/@lines.1"/>
+    <persons
+        xsi:type="company:Client"
+        fullName="Davide Di Ruscio"/>
     <projects
         name="BIRDs"
         related="//@topics.0"
-        budget="1000"/>
+        budget="500000"/>
+    <projects
+        name="AdvAq"
+        related="//@topics.0"
+        budget="10000"/>
     <lines xsi:type="company:ServiceLine"
-        name="Operating Systems"/>
+        name="Development"/>
     <lines xsi:type="company:Unit"
-        name="Engineering"/>
+        name="SE"/>
   </company>
   <categories
-      name="Computer Science"
+      name="Technology Transfer"
       topics="//@topics.0 //@topics.1"/>
-  <topics id="Software Development"
+  <topics id="10"
       category="//@categories.0"/>
-  <topics id="Software Testing"
+  <topics id="99"
       category="//@categories.0"/>
 </company:CompanyModel>

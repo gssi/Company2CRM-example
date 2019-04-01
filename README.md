@@ -1,3 +1,9 @@
+<style>
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+</style>
 # Company2CRM-example
 This repository contains an ATL Project called Company2CRM transforming models conform to the Company metamodel into models conform to the CRM metamodel.
 ## This reposity is composed as follows:

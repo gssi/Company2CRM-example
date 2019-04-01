@@ -7,7 +7,7 @@ This repository contains an ATL Project called Company2CRM transforming models c
 <img src="https://github.com/gssi/Company2CRM-example/blob/master/metamodels/CompanyMM.png" alt="alt text" width="300px">
 <img src="https://github.com/gssi/Company2CRM-example/blob/master/metamodels/crmMM.png" alt="alt text" width="300px">
 </p>
-- A folder *models* contaning the *CompanyModel.xmi* (left) for running the transformation and the obtained *crm.xmi* (right)
+- A folder <i>models</i> contaning the *CompanyModel.xmi* (left) for running the transformation and the obtained *crm.xmi* (right)
 <p align="center">
 <img src="https://github.com/gssi/Company2CRM-example/blob/master/models/companyModel.png" alt="alt text" width="400px">
 <img src="https://github.com/gssi/Company2CRM-example/blob/master/models/crm-xmi.png" alt="alt text" width="400px"></p>

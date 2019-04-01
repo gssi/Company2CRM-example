@@ -12,8 +12,8 @@ This repository contains an ATL Project called Company2CRM,  transforming models
 <img src="https://github.com/gssi/Company2CRM-example/blob/master/models/companyModel.png" alt="alt text" width="400px">
 <img src="https://github.com/gssi/Company2CRM-example/blob/master/models/crm-xmi.png" alt="alt text" width="400px"></p>
 - Each folder also includes an <i>evo</i> folder: this folder contains the evolved version of the artifacts.
-    
-    - For example the evo in the root of the repo contains the evolved transformation , 
+   
+    - For example the evo in the root of the repo contains the evolved transformation, 
     - The evo in the metamodel folder contains the evolved company metamodel (left), 
     - and the evo in the models folder contains the evolved Company model (right) with a relative diagrammatic representation <i>evoCompanyModel.png</i> to inspect the evolved model without installing the complete bundle.
 

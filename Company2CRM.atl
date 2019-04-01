@@ -16,28 +16,27 @@ rule Company2CRM{
 rule Person2Worker{
 	from s: Company!Person(s.position=#employee)
 	to t: CRM!Account(
-	username <- s.fullName	,
+	username <- s.firstname+'.'+s.lastname	,
 	group<-s.employed
 	),
 	t1: CRM!Worker(
 	account<-t,
-	name <- s.fullName
+	name <- s.firstname+' '+s.lastname
 	
 	)
 }
 rule Person2Client{
 	from s: Company!Person(s.position=#client)
 	to t: CRM!Account(
-	username <- s.fullName,
+	username <- s.firstname.toLower()+'.'+s.lastname.toLower(),
 	group<-s.employed	
 	),
 	t1: CRM!Client(
 	account<-t	,
-	name <- s.fullName
+	name <- s.firstname+' '+s.lastname
 	)
 	
 }
-
 rule European2Project{
 	
 	from s: Company!European
@@ -68,4 +67,3 @@ to t: CRM!Group(
 name<-s.name	
 )
 }
-
